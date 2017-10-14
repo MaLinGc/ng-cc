@@ -1,0 +1,12 @@
+<div style="background: #7eff4f">
+  <div>
+    这里是报价组件,会向外暴露股票数据
+  </div>
+  <div>
+    股票代码是{{priceQuote.stockCode}},股票价格是{{priceQuote.lastPrice |number:'2.2-2'}}
+  </div>
+  <div>
+    <input [formControl]="inputAmount" type="text" placeholder="购买股票数量">
+    <input type="button" value="立即购买" (click)="buyStock($event)">
+  </div>
+</div>

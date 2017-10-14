@@ -1,0 +1,11 @@
+<div style="background: red">
+  <div>
+    这是在报价组件外部
+  </div>
+  <hr>
+  <div style="background: green;">
+    <app-order [buyStock]="buyStock"></app-order>
+  </div>
+</div>
+<hr>
+<app-price-quote (buy)="buyHandler($event)"></app-price-quote>

@@ -1,0 +1,10 @@
+<div>
+  子组件
+</div>
+<div>
+  <h3>购买列表</h3>
+  <div>股票代码：{{buyStock.stockCode}}</div>
+  <div>股票价格：{{buyStock.price | number:'2.2-2'}}</div>
+  <div>股票数量：{{buyStock.amount}}</div>
+  <div>股票总价：{{buyStock.amount * buyStock.price | number:'2.2-2'}}</div>
+</div>
